@@ -15,6 +15,7 @@ class DrawCircleNode(Node):
     def send_velocity_command(self):
         msg = Bool() 
         msg.data = True
+        print("it works?")
         self.cmd_vel_pub.publish(msg) 
         print("merdona figo")
 
