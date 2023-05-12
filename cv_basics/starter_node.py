@@ -5,7 +5,7 @@ from my_interfaces.msg import Bool
 class DrawCircleNode(Node):
     def __init__(self):
         super().__init__("starter") 
-        self.cmd_vel_pub = self.create_publisher(Bool, "start", 1 ) 
+        self.cmd_vel_pub = self.create_publisher(Bool, "start colione", 1 ) 
         
         timer_period = 1/30 #seconds
         self.timer = self.create_timer(timer_period,self.send_velocity_command) 
@@ -16,6 +16,7 @@ class DrawCircleNode(Node):
         msg = Bool() 
         msg.data = True
         self.cmd_vel_pub.publish(msg) 
+        print("merdona figo")
 
 
 def main(args=None):
