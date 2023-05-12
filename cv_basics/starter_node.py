@@ -18,6 +18,7 @@ class DrawCircleNode(Node):
         print("it works? mhhhh non copy")
         self.cmd_vel_pub.publish(msg) 
         print("merdona figo")
+        print("ah ok ok e quindi che senso ha? ah beh forse sul coso si vedono i nomi chosen")
 
 
 def main(args=None):
